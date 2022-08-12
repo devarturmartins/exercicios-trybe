@@ -1,0 +1,34 @@
+
+        h1 {
+            font-size: 65px;
+            color: orange;
+            font-family: sans-serif;
+            font-style: italic;
+        }
+        #lista {
+            color: black;
+            line-height: 1.5;
+        }
+        .list-and-parag {
+            background-color: white;
+        }
+        p {
+            font-weight: 600;
+            font-size: 3em;
+            text-align: center;
+        }
+        body {
+            font-size: 16px;
+            background-color: rgb(200,600,550);
+        }
+        #linha1 {
+            background-color: yellow;
+        }
+        #linha2 {
+            background-color: red;
+        }
+        #linha3 {
+            background-color: brown;
+        }
+
+  
