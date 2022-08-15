@@ -1,0 +1,48 @@
+ol {
+    background-color: yellow;    
+}
+
+.impar {
+    text-transform: uppercase;
+}
+.par {
+    color: green;
+}
+
+h1, h2, h3 {
+    color: red;
+}
+
+.italico {
+    font-size: 40px ;
+    border: 1px solid black;
+}
+li {
+    font-size: 20px;
+}
+.neg {
+    font-weight: 600;
+}
+
+.azul {
+    color: blue;
+}
+.pink {
+    background-color: pink;
+}
+.empst:hover{
+    font-weight: 600;
+    color: orange;
+}
+.empw3:hover{
+    font-weight: 600;
+    color: green;
+}
+.empmd:hover{
+    font-weight: 600;
+    color: black;
+}
+.empde:hover{
+    font-weight: 600;
+    color: yellow;
+}
