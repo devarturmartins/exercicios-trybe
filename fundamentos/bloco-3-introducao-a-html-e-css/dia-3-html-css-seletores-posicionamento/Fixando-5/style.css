@@ -37,12 +37,15 @@ li {
 .empw3:hover{
     font-weight: 600;
     color: green;
+    text-decoration: none;
 }
 .empmd:hover{
     font-weight: 600;
     color: black;
+    text-decoration: none;
 }
 .empde:hover{
     font-weight: 600;
     color: yellow;
+    text-decoration: none;
 }
