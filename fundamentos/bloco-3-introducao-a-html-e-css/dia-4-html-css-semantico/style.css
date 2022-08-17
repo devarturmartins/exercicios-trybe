@@ -7,12 +7,12 @@ aside{
     position: absolute;
     right: 0;
     top: 19%;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 25%;
 }
 
 .section1 {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 70%;
     text-align: justify;
 }
