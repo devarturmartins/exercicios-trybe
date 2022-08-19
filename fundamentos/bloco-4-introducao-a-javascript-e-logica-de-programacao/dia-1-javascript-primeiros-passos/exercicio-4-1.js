@@ -175,7 +175,7 @@
      
 // Programa 11 
 
-    let salBruto = 3000; 
+    let salBruto = 1500; 
     let salComInss;
     let IR;
     let salLiquido; 
@@ -194,7 +194,7 @@
     }
 
     if(salComInss <= 1903.98){
-        IR = salComInss;
+        IR = 0;
     }
     else if(salComInss>=1903.99 && salComInss<=2826.65){
         IR = salComInss*0.075 - 142.80;
