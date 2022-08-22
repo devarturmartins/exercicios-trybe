@@ -8,8 +8,7 @@ function bubbleSort (itens){
                 let aux = numbers[i2];
                 itens[i2] = numbers[i2 + 1];
                 numbers[i2 +1] = aux;
-        }
-       
+            }
         }
     }
 }
