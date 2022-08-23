@@ -39,15 +39,16 @@
 
 // exercicio 4 numero primo
 
-// let armazenaPrimos = 0;
+let armazenaPrimos = 4;
 for(let numerador = 2; numerador<=50; numerador += 1){
-    for( let divisor = 2; divisor <= 50; divisor += 1){
-        if(numerador%divisor === 0 && numerador%2 === 1){
-            if (numerador === divisor){
-                console.log(numerador);
-            }
+    let isPrime = false;
+    for( let divisor = 2; divisor <= numerador; divisor += 1){
+        if(numerador%divisor === 0 ){ 
+            let isPrime = false;
         }
-      
     }
-    
+if(isPrime){
+    armazenaPrimos = numerador;
 }
+}
+console.log(armazenaPrimos);
