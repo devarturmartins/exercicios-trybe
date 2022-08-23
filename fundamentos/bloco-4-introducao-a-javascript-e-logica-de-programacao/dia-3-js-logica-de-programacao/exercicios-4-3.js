@@ -39,9 +39,9 @@
 
 // exercicio 4 numero primo
 
-let armazenaPrimos = 4;
+let armazenaPrimos = 0;
 for(let numerador = 2; numerador<=50; numerador += 1){
-    let isPrime = false;
+    let isPrime = true;
     for( let divisor = 2; divisor <= numerador; divisor += 1){
         if(numerador%divisor === 0 ){ 
             let isPrime = false;
