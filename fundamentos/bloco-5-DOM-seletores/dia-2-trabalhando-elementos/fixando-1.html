@@ -20,18 +20,43 @@
         </section>
     
       </main>
-      <!-- <script>
-        const elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
-        const pai = elementoOndeVoceEsta.parentElement;
-        pai.style.color = 'red';
-    
-        const primeiroFilhoDoFilho = elementoOndeVoceEsta.firstElementChild;
-        primeiroFilhoDoFilho.innerText = 'primeiroFilhoDoFilho';
+      <script>
+//fixando - 1
 
-        const fisrtFilhoPai = pai.firstElementChild;
-        const primeiroFilho2 = elementoOndeVoceEsta.previousElementSibling;
-        const textElement = elementoOndeVoceEsta.nextSibling;
-        const terceiroFilho = elementoOndeVoceEsta.nextElementSibling;
-        </script> -->
+        // const elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+        // const pai = elementoOndeVoceEsta.parentElement;
+        // pai.style.color = 'red';
+    
+        // const primeiroFilhoDoFilho = elementoOndeVoceEsta.firstElementChild;
+        // primeiroFilhoDoFilho.innerText = 'primeiroFilhoDoFilho';
+
+        // const fisrtFilhoPai = pai.firstElementChild;
+        // const primeiroFilho2 = elementoOndeVoceEsta.previousElementSibling;
+        // const textElement = elementoOndeVoceEsta.nextSibling;
+        // const terceiroFilho = elementoOndeVoceEsta.nextElementSibling;
+
+// fixando - 2
+    const pai = document.getElementById('pai'); 
+    const irmaoElementoOndeVoceEsta = document.createElement('section'); 
+    irmaoElementoOndeVoceEsta.id = 'irmaoElementoOndeVoceEsta';
+    pai.appendChild(irmaoElementoOndeVoceEsta); 
+
+    const elementoOndeEuEstou = document.getElementById('elementoOndeVoceEsta');
+    const filhoElementoOndeEstou = document.createElement('filhoElementoOndeEstou');
+    filhoElementoOndeEstou.id = 'filhoElementoOndeEstou';
+    elementoOndeEuEstou.appendChild(filhoElementoOndeEstou);
+
+    const primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho'); 
+    const filhoPrimeiroFilhoDoFilho = document.createElement('section');
+    filhoPrimeiroFilhoDoFilho.id = 'filhoPrimeiroFilhoDoFilho';
+    primeiroFilhoDoFilho.appendChild(filhoPrimeiroFilhoDoFilho);
+
+    const terceiroFilho = filhoPrimeiroFilhoDoFilho.parentElement.parentElement.nextElementSibling; 
+    console.log(terceiroFilho);
+
+
+    
+
+        </script>
 </body>
 </html>
