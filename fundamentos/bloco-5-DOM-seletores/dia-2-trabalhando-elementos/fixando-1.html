@@ -35,28 +35,40 @@
         // const textElement = elementoOndeVoceEsta.nextSibling;
         // const terceiroFilho = elementoOndeVoceEsta.nextElementSibling;
 
-// fixando - 2
-    const pai = document.getElementById('pai'); 
-    const irmaoElementoOndeVoceEsta = document.createElement('section'); 
-    irmaoElementoOndeVoceEsta.id = 'irmaoElementoOndeVoceEsta';
-    pai.appendChild(irmaoElementoOndeVoceEsta); 
+// // fixando - 2
+//     const pai = document.getElementById('pai'); 
+//     const irmaoElementoOndeVoceEsta = document.createElement('section'); 
+//     irmaoElementoOndeVoceEsta.id = 'irmaoElementoOndeVoceEsta';
+//     pai.appendChild(irmaoElementoOndeVoceEsta); 
 
-    const elementoOndeEuEstou = document.getElementById('elementoOndeVoceEsta');
-    const filhoElementoOndeEstou = document.createElement('filhoElementoOndeEstou');
-    filhoElementoOndeEstou.id = 'filhoElementoOndeEstou';
-    elementoOndeEuEstou.appendChild(filhoElementoOndeEstou);
+//     const elementoOndeEuEstou = document.getElementById('elementoOndeVoceEsta');
+//     const filhoElementoOndeEstou = document.createElement('filhoElementoOndeEstou');
+//     filhoElementoOndeEstou.id = 'filhoElementoOndeEstou';
+//     elementoOndeEuEstou.appendChild(filhoElementoOndeEstou);
 
-    const primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho'); 
-    const filhoPrimeiroFilhoDoFilho = document.createElement('section');
-    filhoPrimeiroFilhoDoFilho.id = 'filhoPrimeiroFilhoDoFilho';
-    primeiroFilhoDoFilho.appendChild(filhoPrimeiroFilhoDoFilho);
+//     const primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho'); 
+//     const filhoPrimeiroFilhoDoFilho = document.createElement('section');
+//     filhoPrimeiroFilhoDoFilho.id = 'filhoPrimeiroFilhoDoFilho';
+//     primeiroFilhoDoFilho.appendChild(filhoPrimeiroFilhoDoFilho);
 
-    const terceiroFilho = filhoPrimeiroFilhoDoFilho.parentElement.parentElement.nextElementSibling; 
-    console.log(terceiroFilho);
+//     const terceiroFilho = filhoPrimeiroFilhoDoFilho.parentElement.parentElement.nextElementSibling; 
+//     console.log(terceiroFilho);
 
+// fixando - 3
 
+const pai = document.getElementById('pai');
+
+for (let index = pai.childNodes.length - 1; index >= 0; index -= 1) {
+  const currentChildren = pai.childNodes[index];
+  if (currentChildren.id !== 'elementoOndeVoceEsta') {
+    currentChildren.remove();
+  }
+}
+
+const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+segundoEUltimoFilhoDoFilho.remove();
     
 
-        </script>
+    </script>
 </body>
 </html>
