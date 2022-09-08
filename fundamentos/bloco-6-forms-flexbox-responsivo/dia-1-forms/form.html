@@ -5,57 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorteio de viagem</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/materialize/css/materialize.min.css">
+    <script src="/jquery-3.6.1.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
-<body>
-    <header> <h1> Sorteio de viagem!!!</h1></header>
+<body class="card-panel">
+    <header> <h1 class="card-action"> Sorteio de viagem!!!</h1></header>
     <main>
-        <form action="">
-        <div id="divNomeCompleto">
+        <form class="col s12" action="#">
+        <div class="card-panel" id="divNomeCompleto">
             <label for="full-name"> Nome: 
                 <input maxlength="40" minlength="10" type="text" name="full-name" id="full-name">
             </label>
         </div>
-        <div id="divEmail">
+        <div class="card-panel" id="divEmail">
             <label for="email"> Email: 
                 <input maxlength="50" minlength="10" type="email" name="email" id="email">
             </label>
-        </div>
-        <div id="destinoFavorito">
+        </div> 
+        <div class="card-panel" id="destinoFavorito">
             <p>Destino favorito:</p>
             <label for="destino-1">
-                <input type="radio" name="destino" id="destino-1"> Cidade
+                <input type="radio" name="destino" id="destino-1"> <span></span> Cidade <br>
             </label>
             <label for="destino-2">
-                <input type="radio" name="destino" id="destino-2"> Campo
+                <input type="radio" name="destino" id="destino-2"> <span></span> Campo <br>
             </label>
             <label for="destino-3">
-                <input type="radio" name="destino" id="destino-3"> Praia
+                <input type="radio" name="destino" id="destino-3"> <span></span> Praia <br>
             </label>
             <label for="destino-4">
-                <input type="radio" name="destino" id="destino-4"> Montanhas
+                <input type="radio" name="destino" id="destino-4"> <span></span> Montanhas <br>
             </label>
         </div>
-        <div id="boxText">
+        <div class="card-panel" id="boxText">
             <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
             <textarea placeholder="Digite sua resposta aqui!" maxlength="500" name="boxText" id="boxText" cols="50" rows="10"></textarea>
         </div>
-        <div id="dataViagem">
+        <div class="card-panel" id="dataViagem">
             <p>Qual melhor data para sua viagem?</p>
             <input type="date" name="dataViagem" id="viagemData"> 
         </div>
         <div id="checkBox">
             <label for="ofertas">
-            <input type="checkbox" name="ofertas" id="ofertas"> Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+            <input type="checkbox" name="ofertas" id="ofertas"> <span></span> Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
             </label> <br>
             <label for="agree">
-                <input type="checkbox" name="Aceitar os acordos" id="agree">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+                <input type="checkbox" name="Aceitar os acordos" id="agree"> <span></span> Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
             </label>
         </div>
         <div id="btn">
-            <button type="submit">Enviar</button>
+            <button class="btn red" type="submit">Enviar</button>
         </div>
-        <button type="reset">Apagar as respostas</button>
+        <button class="btn waves-effect waves-light" type="reset">Apagar as respostas</button>
         </form>
         <script src="script2.js"></script>
     </main>
