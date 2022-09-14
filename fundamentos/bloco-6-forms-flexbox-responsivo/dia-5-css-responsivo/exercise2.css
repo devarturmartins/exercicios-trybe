@@ -1,0 +1,115 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+ .container {
+    display: flex;
+ } 
+
+ @media screen and (max-width: 400px){
+    body {
+        background-color: aqua;
+        
+    }
+    header {
+        display: flex;
+        width: 80%;
+    }
+    .container {
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 3% 5%;
+        font-size: 1.1rem;
+
+    }
+
+    .aside-one {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .main-content {
+        margin: 1% 5%;
+    }
+ }
+
+ @media screen and (min-width: 500px){
+    body {
+        background-color: blue;
+        
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+    }
+    
+    .ul {
+        display: flex;
+        margin-right: 30%;
+        width: 400px;
+        justify-content: space-around;
+        align-items: flex-end;
+        
+    }
+    .container {
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 3% 5%;
+        font-size: 1.9rem;
+
+    }
+
+    .aside-one {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .main-content {
+        margin: 1% 5%;
+    }
+ }
+
+ @media screen and (min-width: 1000px){
+    body {
+        background-color: pink;
+        
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+    }
+    
+    .ul {
+        display: flex;
+        margin-right: 30%;
+        width: 400px;
+        justify-content: space-around;
+        align-items: flex-end;
+        
+    }
+    .container {
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 3% 5%;
+        font-size: 1.9rem;
+
+    }
+
+    .aside-one {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .main-content {
+        margin: 1% 5%;
+    }
+ }
